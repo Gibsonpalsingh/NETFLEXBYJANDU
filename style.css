@@ -1,0 +1,121 @@
+/* Netflix-inspired CSS */
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #141414;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #fff;
+}
+
+.header {
+    background: #141414;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: #e50914;
+    font-size: 2.2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+.nav {
+    display: flex;
+    gap: 25px;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.2s;
+}
+
+.nav a:hover {
+    color: #e50914;
+}
+
+.hero {
+    background: linear-gradient(to top, #141414 60%, rgba(20,20,20,0.2)), url('https://assets.nflxext.com/ffe/siteui/vlv3/7e4e7e2d-2e7e-4e2c-8e7e-2e7e2e7e2e7e/7e4e7e2d-2e7e-4e2c-8e7e-2e7e2e7e2e7e_US-en-20230619-popsignuptwoweeks-perspective_alpha_website_large.jpg') center/cover no-repeat;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 60px 40px;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero-desc {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background: #e50914;
+    color: #fff;
+    border: none;
+    padding: 12px 32px;
+    font-size: 1.1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+.btn:hover {
+    background: #b0060f;
+}
+
+.section {
+    padding: 40px;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.row {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+}
+
+.card {
+    min-width: 200px;
+    background: #222;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.08);
+}
+
+.card img {
+    width: 100%;
+    display: block;
+}
+
+.card-title {
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background: rgba(20,20,20,0.85);
+    text-align: center;
+    margin: 0;
+}
